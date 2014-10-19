@@ -27,6 +27,7 @@
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<a href="#primary" class="skip-to-primary dashicons dashicons-arrow-down-alt2"><span class="screen-reader-text">Skip to content</span></a>
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

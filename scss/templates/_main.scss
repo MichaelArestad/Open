@@ -19,13 +19,13 @@
 	left: 0;
 	width: 100%;
 	transform: translateY(-50%); // TODO create fallback
+	text-align: center;
 }
 
 .site-title a,
 .site-description {
 	display: block;
 	color: #fff;
-	text-align: center;
 }
 
 .site-title {
@@ -37,6 +37,24 @@
 	font-size: em(20px);
 	font-weight: $normal;
 }
+
+.skip-to-primary {
+	margin-top: 40px;
+	border: 1px solid;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 0 #fff;
+	width: 44px;
+	height: 44px;
+	color: #fff;
+	line-height: 43px;
+	transition: all .15s ease-in-out;
+
+	&:hover {
+		color: #404040;
+		box-shadow: inset 0 0 0 22px #fff;
+	}
+}
+
 
 // Navigation
 
