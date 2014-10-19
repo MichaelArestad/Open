@@ -685,6 +685,12 @@ object {
   display: none;
 }
 
+.site-footer {
+  padding: 60px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
 .comment-content a {
   word-wrap: break-word;
 }
@@ -793,10 +799,17 @@ object {
   display: block;
 }
 
-.site-footer {
-  padding: 60px 0;
-  font-size: 14px;
-  text-align: center;
+.site-main {
+  margin: 0 auto;
+  max-width: 560px;
+}
+
+.single .entry-content p:first-child:first-letter {
+  float: left;
+  font-size: 114px;
+  line-height: 85px;
+  padding-right: 10px;
+  font-weight: 700;
 }
 
 .portfolio-item {

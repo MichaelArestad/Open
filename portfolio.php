@@ -9,7 +9,7 @@ get_header(); ?>
 
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main portfolio" role="main">
+	<main id="main" class="portfolio" role="main">
 
 		<?php include 'portfolio-image.php' ?>
 		<?php include 'portfolio-image.php' ?>
