@@ -92,6 +92,8 @@ add_action( 'widgets_init', 'open_widgets_init' );
  * Enqueue scripts and styles.
  */
 function open_scripts() {
+	wp_enqueue_style( 'dashicons' );
+
 	wp_enqueue_style( 'open-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'open-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
@@ -111,7 +113,7 @@ add_action( 'wp_enqueue_scripts', 'open_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-//require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.

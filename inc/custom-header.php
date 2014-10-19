@@ -26,8 +26,8 @@ function open_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'open_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 1600,
+		'height'                 => 900,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'open_header_style',
 		'admin-head-callback'    => 'open_admin_header_style',

@@ -24,6 +24,9 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'open' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+		<?php if ( get_header_image() ) : ?>
+			<div class="header-background" style="background: url(<?php header_image(); ?>); background-size: cover;"></div>
+		<?php endif; // End header image check. ?>
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
