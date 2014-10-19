@@ -1,0 +1,103 @@
+// ==========================================================================
+// Main
+// ==========================================================================
+
+// I'm sure you can think of some awesome code to put here. I usually use it
+// as a scratchpad before moving code into their own modules.
+
+.site-header {
+	@extend .clearfix;
+	position: relative;
+	padding-top: 56.25%; // relative sizing hack;
+	height: 0;
+	background: #4f7a8c; // TODO change this
+}
+
+.site-branding {
+	position: absolute;
+	top: 45%;
+	left: 0;
+	width: 100%;
+	transform: translateY(-50%); // TODO create fallback
+}
+
+.site-title a,
+.site-description {
+	display: block;
+	color: #fff;
+	text-align: center;
+}
+
+.site-title {
+	margin: 0;
+}
+
+.site-description {
+	margin: 0;
+	font-size: em(20px);
+	font-weight: $normal;
+}
+
+// Navigation
+
+.main-navigation {
+	@extend .clearfix;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	text-align: right;
+}
+
+.menu-toggle { // TODO Should I keep the button?
+	display: none;
+}
+
+.nav-menu,
+.nav-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav-menu {
+	float: right;
+	padding-right: 5px;
+
+	a {
+		display: block;
+		padding: 8px 10px;
+		color: #fff;
+		font-size: em(14px);
+		text-decoration: none;
+	}
+	ul {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -100px;
+		width: 200px;
+		background: #404040;
+		background: rgba(0,0,0,.9);
+
+		ul {
+			top: 0;
+			left: 100%;
+			margin-left: 0;
+		}
+	}
+	> li {
+		float: left;
+	}
+	li {
+		position: relative;
+		text-align: left;
+
+		&:hover {
+			> ul {
+				display: block;
+			}
+		}
+	}
+}
