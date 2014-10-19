@@ -56,6 +56,7 @@
 }
 
 
+
 // Navigation
 
 .main-navigation {
@@ -117,5 +118,43 @@
 				display: block;
 			}
 		}
+	}
+}
+
+.site-footer {
+	padding: 60px 0;
+	font-size: 14px;
+	text-align: center;
+
+	a {
+		@extend %underline;
+	}
+}
+
+// Portfolio
+
+.portfolio {
+	@extend .clearfix;
+}
+
+.portfolio-item {
+	position: relative;
+	float: left;
+	padding-top: 15.625%;
+	width: 25%;
+	height: 0;
+	background: #eee;
+
+	&:nth-child(2n) {
+		background: #fafafa;
+	}
+	&:nth-child(3n) {
+		background: #ddd;
+	}
+	&:nth-child(5n) {
+		background: #999;
+	}
+	&:nth-child(7n) {
+		background: #777;
 	}
 }

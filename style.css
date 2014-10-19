@@ -361,7 +361,7 @@ a {
   text-decoration: none;
 }
 
-.widget a, .entry-content a {
+.widget a, .entry-content a, .site-footer a {
   background-image: linear-gradient(to bottom, transparent 75%, #404040 75%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
@@ -597,11 +597,11 @@ object {
   margin: 0 auto;
 }
 
-.clearfix:before, .widget-area:before, .site-header:before, .main-navigation:before, .clearfix:after, .widget-area:after, .site-header:after, .main-navigation:after {
+.clearfix:before, .widget-area:before, .site-header:before, .main-navigation:before, .portfolio:before, .clearfix:after, .widget-area:after, .site-header:after, .main-navigation:after, .portfolio:after {
   content: "";
   display: table;
 }
-.clearfix:after, .widget-area:after, .site-header:after, .main-navigation:after {
+.clearfix:after, .widget-area:after, .site-header:after, .main-navigation:after, .portfolio:after {
   clear: both;
 }
 
@@ -791,6 +791,33 @@ object {
 }
 .nav-menu li:hover > ul {
   display: block;
+}
+
+.site-footer {
+  padding: 60px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.portfolio-item {
+  position: relative;
+  float: left;
+  padding-top: 15.625%;
+  width: 25%;
+  height: 0;
+  background: #eee;
+}
+.portfolio-item:nth-child(2n) {
+  background: #fafafa;
+}
+.portfolio-item:nth-child(3n) {
+  background: #ddd;
+}
+.portfolio-item:nth-child(5n) {
+  background: #999;
+}
+.portfolio-item:nth-child(7n) {
+  background: #777;
 }
 
 .infinite-scroll .paging-navigation, .infinite-scroll.neverending .site-footer {
